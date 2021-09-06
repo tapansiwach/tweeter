@@ -5,6 +5,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(../images/3px-tile.png);
 } 
 
 header h2 {
