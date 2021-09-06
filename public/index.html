@@ -55,11 +55,17 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
-    <h1>sample header</h1>
-    <h2>sample subheader</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nihil iusto quis adipisci architecto dolorem
-      culpa itaque expedita tenetur repudiandae, quas fuga cumque atque facere pariatur quae fugiat voluptas facilis.
-    </p>
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form>
+        <label for="tweet-text">What are you humming about?</label>
+        <textarea name="text" id="tweet-text"></textarea>
+        <div>
+          <button type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </div>
+      </form>
+    </section>
   </main>
 </body>
 
