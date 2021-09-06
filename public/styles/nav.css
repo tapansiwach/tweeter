@@ -6,3 +6,22 @@ nav {
   display: flex;
   align-items: center;
 }
+
+#logo {
+  font-family: 'Bungee', cursive, sans-serif;
+  font-size: 2.25em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+}
+
+.fas {
+  color: red;
+}
