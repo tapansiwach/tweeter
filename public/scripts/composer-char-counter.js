@@ -1,3 +1,9 @@
 $(document).ready(function() {
-  console.log(`document has loaded`);
+
+  $(".new-tweet form textarea").on("input", function(event) {
+    const remainingChars = 140 - this.value.length;
+    const output = $(this).next().children()[1];
+    output.textContent = remainingChars;
+  });
+
 });
