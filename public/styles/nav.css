@@ -20,9 +20,10 @@ nav {
   justify-content: space-between;
 }
 
-.new-tweet {
+.tweet-trigger {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 nav .fas {

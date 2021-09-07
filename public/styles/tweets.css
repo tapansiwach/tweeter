@@ -52,5 +52,5 @@
 
 .tweet .tweet-icons i:hover {
   color: red;
-  box-shadow: .05em .05em .025em red;
+  /* box-shadow: .05em .05em .025em red; */
 }
