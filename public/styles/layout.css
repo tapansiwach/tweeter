@@ -39,3 +39,7 @@ body {
    background-color: inherit;
    width: 90%;
  }
+
+.hidden {
+  display: none;
+}

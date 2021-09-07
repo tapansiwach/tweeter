@@ -25,6 +25,6 @@ nav {
   flex-direction: column;
 }
 
-.fas {
+nav .fas {
   color: red;
 }

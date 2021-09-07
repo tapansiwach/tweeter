@@ -21,12 +21,14 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- App CSS -->
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -68,7 +70,27 @@
       </form>
     </section>
     <section id="tweets">
-
+      <article class="tweet">
+        <header>
+          <div>
+            <span class="face material-icons">face</span>
+            <span class="user-name">Name</span>
+          </div>
+          <span class="user-handle">@Handle</span>
+        </header>
+        <p>tweet text</p>
+        <hr>
+        <footer>
+          some time ago
+          <div>
+            <i class="far fa-flag"></i>
+            <i class="hidden fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="far fa-heart"></i>
+            <i class="hidden fas fa-heart"></i>
+          </div>
+        </footer>
+      </article>
     </section>
   </main>
 
