@@ -45,3 +45,12 @@
   align-items: flex-start;
   font-size: 0.75em;
 }
+
+.tweet .tweet-icons i {
+  margin-left: 0.5em;
+}
+
+.tweet .tweet-icons i:hover {
+  color: red;
+  box-shadow: .05em .05em .025em red;
+}
