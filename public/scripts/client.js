@@ -71,3 +71,18 @@ const renderTweets = function(tweets) {
 
 
 renderTweets(data);
+
+
+// add an event listener for form submissions
+$('.new-tweet form').on('submit', function(event) {
+  event.preventDefault();
+  console.log($(this).serialize());
+  const queryString = $(this).serialize();
+
+  $.post('/tweets', queryString, function(response) {
+    console.log(response); // no response is coming back from the server
+    // but the tweets are reaching the /tweets endpoint
+    // varified by loading localhost:8080/tweets
+  });
+  this.reset(); // use native javascript to reset values in form
+});
