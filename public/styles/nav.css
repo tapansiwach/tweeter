@@ -29,3 +29,12 @@ nav {
 nav .fas {
   color: red;
 }
+
+nav div {
+  padding: 1em;
+}
+
+nav div:hover {
+  background-color: royalblue;
+  cursor: pointer;
+}
