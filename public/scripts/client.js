@@ -1,35 +1,8 @@
 /*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
-const createTweetElement = tweetObj => {
-  const $tweet = $(`<article class="tweet"></article>`);
-  $tweet.append(`
-      <header>
-        <div>
-          <img class="face" src=${tweetObj.user.avatars} alt="">
-          <span class="user-name">${tweetObj.user.name}</span>
-        </div>
-        <span class="user-handle">${tweetObj.user.handle}</span>
-      </header>
-      <p>${tweetObj.content.text}</p>
-      <hr>
-      <footer>
-      ${timeago.format(tweetObj.created_at)}
-        <div class="tweet-icons">
-          <i class="far fa-flag"></i>
-          <i class="hidden fas fa-flag"></i>
-          <i class="fas fa-retweet"></i>
-          <i class="far fa-heart"></i>
-          <i class="hidden fas fa-heart"></i>
-        </div>
-      </footer>
-  `);
-  console.log($tweet);
-  return $tweet;
-};
+* Client-side JS logic goes here
+* jQuery is already loaded
+* Reminder: Use (and do all your DOM work in) jQuery's document ready function
+*/
 
 // Fake data taken from initial-tweets.json
 const data = [
@@ -57,6 +30,33 @@ const data = [
     "created_at": 1461113959088
   }
 ]
+
+
+const createTweetElement = tweetObj => {
+  const $tweet = $(`<article class="tweet"></article>`);
+  $tweet.append(`
+      <header>
+        <div>
+          <img class="face" src=${tweetObj.user.avatars} alt="">
+          <span class="user-name">${tweetObj.user.name}</span>
+        </div>
+        <span class="user-handle">${tweetObj.user.handle}</span>
+      </header>
+      <p>${tweetObj.content.text}</p>
+      <hr>
+      <footer>
+      ${timeago.format(tweetObj.created_at)}
+        <div class="tweet-icons">
+          <i class="far fa-flag"></i>
+          <i class="hidden fas fa-flag"></i>
+          <i class="fas fa-retweet"></i>
+          <i class="far fa-heart"></i>
+          <i class="hidden fas fa-heart"></i>
+        </div>
+      </footer>
+  `);
+  return $tweet;
+};
 
 
 const renderTweets = function(tweets) {
