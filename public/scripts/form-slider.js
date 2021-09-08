@@ -1,7 +1,9 @@
-$("nav div").on('click', function(event) {
-  if ($(".new-tweet").is(":hidden")) {
-    $(".new-tweet").slideDown();
+$("nav .tweet-trigger").on('click', function(event) {
+  const section = $(".new-tweet");
+  if (section.is(":hidden")) {
+    section.slideDown();
+    $("#tweet-text").focus();
   } else {
-    $(".new-tweet").slideUp();
+    section.slideUp();
   }
 });
