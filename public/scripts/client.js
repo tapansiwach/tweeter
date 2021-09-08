@@ -88,6 +88,10 @@ $('.new-tweet form').on('submit', function(event) {
       console.log(response); // no response is coming back from the server
       // but the tweets are reaching the /tweets endpoint
       // varified by loading localhost:8080/tweets
+
+      // after a tweet is created, refresh the page
+      $("#tweets").empty();
+      loadTweets();
     });
   }
   this.reset(); // use native javascript to reset values in form
