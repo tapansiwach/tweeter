@@ -17,7 +17,7 @@ const createTweetElement = tweetObj => {
       <p>${tweetObj.content.text}</p>
       <hr>
       <footer>
-      ${tweetObj.created_at}
+      ${timeago.format(tweetObj.created_at)}
         <div class="tweet-icons">
           <i class="far fa-flag"></i>
           <i class="hidden fas fa-flag"></i>
