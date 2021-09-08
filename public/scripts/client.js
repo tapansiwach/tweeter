@@ -5,8 +5,8 @@
  */
 
 const createTweetElement = tweetObj => {
-  const $tweet = $(`<article class="tweet">Hello world</article>`);
-  $tweet.innerHTML = `
+  const $tweet = $(`<article class="tweet"></article>`);
+  $tweet.append(`
       <header>
         <div>
           <img class="face" src=${tweetObj.user.avatars} alt="">
@@ -26,7 +26,7 @@ const createTweetElement = tweetObj => {
           <i class="hidden fas fa-heart"></i>
         </div>
       </footer>
-  `;
+  `);
   console.log($tweet);
   return $tweet;
 };
