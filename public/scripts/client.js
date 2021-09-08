@@ -31,21 +31,38 @@
 //   }
 // ]
 
+// handle cross site scripting XSS attacks by using the safe encoding 
+// representation. eg: &lt;script&gt; instead of <script>.
+//  .createTextNode() DOM method does this safe encoding 
+const escape = function(str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 const createTweetElement = tweetObj => {
   const $tweet = $(`<article class="tweet"></article>`);
+
+  const escapedObject = {
+    avatar: escape(tweetObj.user.avatars),
+    name: escape(tweetObj.user.name),
+    handle: escape(tweetObj.user.handle),
+    text: escape(tweetObj.content.text),
+    created_at: escape(tweetObj.created_at),
+  };
+
   $tweet.append(`
       <header>
         <div>
-          <img class="face" src=${tweetObj.user.avatars} alt="">
-          <span class="user-name">${tweetObj.user.name}</span>
+          <img class="face" src=${escapedObject.avatar} alt="">
+          <span class="user-name">${escapedObject.name}</span>
         </div>
-        <span class="user-handle">${tweetObj.user.handle}</span>
+        <span class="user-handle">${escapedObject.handle}</span>
       </header>
-      <p>${tweetObj.content.text}</p>
+      <p>${escapedObject.text}</p>
       <hr>
       <footer>
-      ${timeago.format(tweetObj.created_at)}
+      ${timeago.format(escapedObject.created_at)}
         <div class="tweet-icons">
           <i class="far fa-flag"></i>
           <i class="hidden fas fa-flag"></i>
