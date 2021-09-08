@@ -97,10 +97,13 @@ $('.new-tweet form').on('submit', function(event) {
 
   const text = this.text.value;
   if (text === '') {
-    alert('tweet input field is empty');
+    // alert('tweet input field is empty');
+    $('#error-alert').text('tweet input field is empty').slideDown('slow');
   } else if (text.length > 140) {
-    alert('length of tweet is more than 140 characters');
+    $('#error-alert').text('length of tweet is more than 140 characters').slideDown('slow');
+    // alert('length of tweet is more than 140 characters');
   } else {
+    $('#error-alert').text('').slideUp('slow');
     $.post('/tweets', queryString, function(response) {
       console.log(response); // no response is coming back from the server
       // but the tweets are reaching the /tweets endpoint
