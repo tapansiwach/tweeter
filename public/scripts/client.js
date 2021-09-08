@@ -76,14 +76,20 @@ const renderTweets = function(tweets) {
 // add an event listener for form submissions
 $('.new-tweet form').on('submit', function(event) {
   event.preventDefault();
-  console.log($(this).serialize());
   const queryString = $(this).serialize();
 
-  $.post('/tweets', queryString, function(response) {
-    console.log(response); // no response is coming back from the server
-    // but the tweets are reaching the /tweets endpoint
-    // varified by loading localhost:8080/tweets
-  });
+  const text = this.text.value;
+  if (text === '') {
+    alert('tweet input field is empty');
+  } else if (text.length > 140) {
+    alert('length of tweet is more than 140 characters');
+  } else {
+    $.post('/tweets', queryString, function(response) {
+      console.log(response); // no response is coming back from the server
+      // but the tweets are reaching the /tweets endpoint
+      // varified by loading localhost:8080/tweets
+    });
+  }
   this.reset(); // use native javascript to reset values in form
 });
 
