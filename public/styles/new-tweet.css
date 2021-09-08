@@ -1,3 +1,9 @@
+#error-alert {
+  padding: 1em;
+  background-color: indianred;
+  color: white;
+}
+
 form {
   display: flex;
   flex-direction: column;
