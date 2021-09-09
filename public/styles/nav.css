@@ -5,36 +5,27 @@ nav {
   padding: 0 1.5em;
   display: flex;
   align-items: center;
-}
-
-#logo {
-  font-family: "Bungee", cursive, sans-serif;
-  font-size: 2.25em;
-}
-
-nav {
   position: fixed;
   width: 100%;
   top: 0;
   display: flex;
   justify-content: space-between;
 }
-
-.tweet-trigger {
+nav .tweet-trigger {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1em;
 }
-
+nav .tweet-trigger:hover {
+  background-color: royalblue;
+  cursor: pointer;
+}
 nav .fas {
   color: red;
 }
 
-nav .tweet-trigger {
-  padding: 1em;
-}
-
-nav .tweet-trigger:hover {
-  background-color: royalblue;
-  cursor: pointer;
+#logo {
+  font-family: "Bungee", cursive, sans-serif;
+  font-size: 2.25em;
 }

@@ -1,17 +1,32 @@
 @use 'variables';
 
-#error-alert {
-  padding: 1em;
-  background-color: variables.$error-background-color;
-  color: variables.$text-color-light;
-}
 
 form {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   /* border: 2px dashed red; */
+  
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button[type=submit] {
+    background-color: variables.$primary-color;
+    font-family: variables.$logo-font-family;
+    text-transform: uppercase;
+    color: variables.$text-color-light;
+  }
 }
+
+
+#error-alert {
+  padding: 1em;
+  background-color: variables.$error-background-color;
+  color: variables.$text-color-light;
+}
+
 
 #tweet-text {
   border: none;
@@ -22,14 +37,3 @@ form {
   margin-bottom: 1em;
 }
 
-form div {
-  display: flex;
-  justify-content: space-between;
-}
-
-button[type=submit] {
-  background-color: variables.$primary-color;
-  font-family: variables.$logo-font-family;
-  text-transform: uppercase;
-  color: variables.$text-color-light;
-}

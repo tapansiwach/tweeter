@@ -11,44 +11,36 @@
   margin-bottom: 1em;
   padding: 1em;
 }
-
 .tweet header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .tweet header div {
   display: flex;
   align-items: center;
 }
-
-.face {
+.tweet .face {
   font-size: 3em;
   margin-right: 0.25em;
 }
-
-.user-name {
+.tweet .user-name {
   font-size: 1.125em;
   font-weight: lighter;
 }
-
-.user-handle {
+.tweet .user-handle {
   font-size: 1.125em;
   color: darkgrey;
 }
-
 .tweet footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   font-size: 0.75em;
 }
-
 .tweet .tweet-icons i {
   margin-left: 0.5em;
 }
-
 .tweet .tweet-icons i:hover {
   color: red;
   /* box-shadow: .05em .05em .025em red; */

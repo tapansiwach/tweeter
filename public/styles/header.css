@@ -8,12 +8,10 @@ nav + header {
   background-image: url(../images/3px-tile.png);
   width: 100%;
 }
-
 nav + header h2 {
   color: white;
   margin: 0.625em 0 0.625em;
 }
-
 nav + header h2 span {
   font-weight: lighter;
 }

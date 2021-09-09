@@ -1,5 +1,6 @@
 @use 'variables';
 
+
 nav + header {
   margin-top: 120px;
   padding-bottom: 40px;
@@ -9,13 +10,13 @@ nav + header {
   align-items: center;
   background-image: variables.$header-background-image;
   width: 100%;
+
+  h2 {
+    color: variables.$text-color-light;
+    margin: 0.625em 0 0.625em;
+
+    span {
+      font-weight: lighter;
+    }
+  }
 } 
-
-nav+header h2 {
-  color: variables.$text-color-light;
-  margin: 0.625em 0 0.625em;
-}
-
-nav+header h2 span {
-  font-weight: lighter;
-}
