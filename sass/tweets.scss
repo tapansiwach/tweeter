@@ -3,12 +3,14 @@
   border: 2px dashed red;
 } */
 
+@use 'variables';
+
 #tweets {
   margin: 1em 0;
 }
 
 .tweet {
-  border: 2px solid black;
+  border: 2px solid variables.$tweet-border-color;
   margin-bottom: 1em;
   padding: 1em;
 }
@@ -36,7 +38,7 @@
 
 .user-handle {
   font-size: 1.125em;
-  color: darkgrey;
+  color: variables.$text-color-user-handle;
 }
 
 .tweet footer {
@@ -51,6 +53,6 @@
 }
 
 .tweet .tweet-icons i:hover {
-  color: red;
+  color: variables.$highlight-color;
   /* box-shadow: .05em .05em .025em red; */
 }

@@ -3,6 +3,9 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+@use 'variables';
+
 html {
   box-sizing: border-box;
 }
@@ -15,8 +18,8 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: variables.$text-color-default;
+  background-color: variables.$body-background-color;
   font-size: 24px;
   display: flex;
   flex-direction: column;
@@ -32,7 +35,7 @@ body {
  }
 
  body * {
-   font-family: 'Source Sans Pro', sans-serif;
+   font-family: variables.$default-font-family;
  }
 
  .container {

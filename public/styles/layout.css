@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -13,7 +14,6 @@ html {
 /*
  * Global layout stuff
  */
-
 body {
   color: #545149;
   background-color: #f4f1ec;
@@ -26,19 +26,18 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+body {
+  font-size: 100%;
+}
 
- body {
-   font-size: 100%;
- }
+body * {
+  font-family: "Source Sans Pro", sans-serif;
+}
 
- body * {
-   font-family: 'Source Sans Pro', sans-serif;
- }
-
- .container {
-   background-color: inherit;
-   width: 90%;
- }
+.container {
+  background-color: inherit;
+  width: 90%;
+}
 
 .hidden {
   display: none;

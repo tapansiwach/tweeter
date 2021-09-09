@@ -1,14 +1,16 @@
+@use 'variables';
+
 nav {
-  background-color: #4056A1;
+  background-color: variables.$primary-color;
   height: 120px;
-  color: #FFFFFF;
+  color: variables.$text-color-light;
   padding: 0 1.5em;
   display: flex;
   align-items: center;
 }
 
 #logo {
-  font-family: 'Bungee', cursive, sans-serif;
+  font-family: variables.$logo-font-family;
   font-size: 2.25em;
 }
 
@@ -27,7 +29,7 @@ nav {
 }
 
 nav .fas {
-  color: red;
+  color: variables.$highlight-color;
 }
 
 nav .tweet-trigger {
@@ -35,6 +37,6 @@ nav .tweet-trigger {
 }
 
 nav .tweet-trigger:hover {
-  background-color: royalblue;
+  background-color: variables.$primary-accent-color;
   cursor: pointer;
 }

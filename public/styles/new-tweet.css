@@ -27,7 +27,7 @@ form div {
 
 button[type=submit] {
   background-color: #4056A1;
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", cursive, sans-serif;
   text-transform: uppercase;
   color: white;
 }

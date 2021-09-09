@@ -1,16 +1,18 @@
+@use 'variables';
+
 nav + header {
   margin-top: 120px;
   padding-bottom: 40px;
-  background-color: sandybrown;
+  background-color: variables.$header-background-color;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../images/3px-tile.png);
+  background-image: variables.$header-background-image;
   width: 100%;
 } 
 
 nav+header h2 {
-  color: white;
+  color: variables.$text-color-light;
   margin: 0.625em 0 0.625em;
 }
 

@@ -1,7 +1,9 @@
+@use 'variables';
+
 #error-alert {
   padding: 1em;
-  background-color: indianred;
-  color: white;
+  background-color: variables.$error-background-color;
+  color: variables.$text-color-light;
 }
 
 form {
@@ -26,8 +28,8 @@ form div {
 }
 
 button[type=submit] {
-  background-color: #4056A1;
-  font-family: 'Bungee', sans-serif;
+  background-color: variables.$primary-color;
+  font-family: variables.$logo-font-family;
   text-transform: uppercase;
-  color: white;
+  color: variables.$text-color-light;
 }
