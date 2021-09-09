@@ -52,7 +52,7 @@ const createTweetElement = tweetObj => {
 
 const renderTweets = function(tweets) {
   // loops through tweets
-  for (const item of tweets) {
+  for (const item of tweets.reverse()) {
     // calls createTweetElement for each tweet
     const $tweet = createTweetElement(item);
     // takes return value and appends it to the tweets container
