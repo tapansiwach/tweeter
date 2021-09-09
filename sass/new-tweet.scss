@@ -1,0 +1,33 @@
+#error-alert {
+  padding: 1em;
+  background-color: indianred;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* border: 2px dashed red; */
+}
+
+#tweet-text {
+  border: none;
+  outline: none;
+  resize: none;
+  border-bottom: 3px solid black;
+  background-color: inherit;
+  margin-bottom: 1em;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+button[type=submit] {
+  background-color: #4056A1;
+  font-family: 'Bungee', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
