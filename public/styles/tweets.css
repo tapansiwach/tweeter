@@ -11,6 +11,9 @@
   margin-bottom: 1em;
   padding: 1em;
 }
+.tweet:hover {
+  box-shadow: 1em 1em 1em darkgrey;
+}
 .tweet header {
   display: flex;
   justify-content: space-between;

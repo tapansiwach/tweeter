@@ -16,6 +16,10 @@
   margin-bottom: 1em;
   padding: 1em;
 
+  &:hover {
+    box-shadow: 1em 1em 1em darkgrey;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
