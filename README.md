@@ -15,3 +15,11 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- chance
+- md5
+
+## Screenshots
+### Create Tweets
+!["Create Tweets"](./screenshots/create_a_tweet.png)
+### View Tweets
+!["View Tweets"](./screenshots/view_tweets.png)
